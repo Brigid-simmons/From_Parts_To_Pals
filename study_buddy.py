@@ -9,12 +9,22 @@ import time
 import json
 import os
 
+'''
+This is an enabler for test mode so you can see what settings you prefer. Rather
+than 25 minute sessions, this uses 10 second sessions and 5 second breaks
+
+FOCUS_MS --> focus block time in miliseconds
+BREAK_MS ---. break block time in miliseconds
+LONG_BREAK_MS --> long break block time in miliseconds
+
+To customize amount of time, change the first number listed after the else statement :)
+'''
+
 # Change ONLY True to False after completing the short tests.
-TEST_MODE = True
-# EDIT ME! (Change FOCUS_MS, BREAK_MS, or LONG_BREAK_MS to match your study preferences)
-FOCUS_MS = 10_000 if TEST_MODE else 25 * 60 * 1000
-BREAK_MS = 5_000 if TEST_MODE else 5 * 60 * 1000
-LONG_BREAK_MS = 8_000 if TEST_MODE else 15 * 60 * 1000
+TEST_MODE = False
+FOCUS_MS = 10_000 if TEST_MODE else 25 * 60 * 1000 #YOU CAN EDIT
+BREAK_MS = 5_000 if TEST_MODE else 5 * 60 * 1000 #YOU CAN EDIT
+LONG_BREAK_MS = 8_000 if TEST_MODE else 15 * 60 * 1000 #YOU CAN EDIT
 SAVE_PREFIX = "buddy_test" if TEST_MODE else "buddy_real"
 
 
