@@ -1,0 +1,20 @@
+PICO STUDY BUDDY BUILD KIT
+
+Start with Pico_Study_Buddy_Build_Guide.pdf.
+
+Tested hardware: Raspberry Pi Pico 2 W, 240x240 ST7789 SPI LCD,
+one four-leg push button, breadboard, 10 jumper wires, USB data cable.
+
+Files:
+  screen_test.py   Checks screen communication with four colors.
+  button_test.py   Prints button states in the Thonny Shell.
+  study_buddy.py   Complete cat, timer, breaks, and saved growth program.
+
+Use Thonny to open each Python file from your computer and save it to
+the Pico as directed in the guide. Save study_buddy.py on Pico as main.py
+for automatic startup. It starts with TEST_MODE = True for short tests.
+After testing, change that line to TEST_MODE = False in Pico main.py,
+save, and run. Real and test progress remain separate.
+
+Unplug USB before changing wires. Do not use these screen settings
+for SH1106 OLED or ST7735 displays.
